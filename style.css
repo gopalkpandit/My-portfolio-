@@ -1,0 +1,55 @@
+body {
+
+  font-family: Arial;
+  color: black;
+  margin: 20px;
+  background-color: #FFFFFF;
+}
+header, section, footer, div {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border-style: ridged;
+  border-width: 5px;
+  box-shadow:0 0 10px black;
+}
+h1 {
+  color: #0000FF;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: black;
+  background: red;
+}
+marquee {
+  background: red;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+}
+p1 {
+  color: black;
+}
+h3 {
+  color: blue;
+}
+input, iframe {
+  background: white;
+  width: 200px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  
+}
+button {
+  color: white;
+  background: red;
+  width: 60px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+}
+div {
+  text-align: center;
+}
