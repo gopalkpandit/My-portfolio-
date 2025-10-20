@@ -1,47 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My_portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gopal Pandit — Portfolio</title>
+  <script src="script.js"></script>
+  <meta name="description" content="Advanced portfolio of Gopal Kr. Pandit — Full-stack Engineer" />
   <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-  <h2>Check Password</h2>
-  
-  <header>
-    <h1>Hello, I'm [ Gopal Kumar Pandit ]</h1>
-    <marquee>
-    <p1>Student | Future - Software Engineer</p1>
-    </marquee>
-    <p>
-    <form action="search" method="get" >
-      <input type="text" class="search-box" placeholder="Search Here..." name="query">
-      <button onclick="searchbutton">Submit</button>
-    </form>
-    </p>
-  </header>
-  <section id="skills">
-    <h2>My Skills</h2>
-    <ol>
-      <li>HTML, CSS </li>
-      <li>Learning Python (Basic)</li>
-      <li>Learning DSA</li>
-    </ol>
-  </section>
-<section id="projects">
-    <h2>My Projects</h2>
-    <p>Coming Soon...</p>
-  </section>
-  <section id="pdf">
-    <h2> My Pdf</h2>
-  </section>
-  <footer>
-    <h2>Contact:-</h2>
-    <p>Email:- gopalkpandit07@gmail.com</p>
-  </footer>
-  <div>
-    <h3>Thank You </h3>
-    <p>For Visit My Portfolio.</p>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">GP<span class="dot">.</span></div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Hello , I Am Gopal Kumar Pandit.</h1>
+          <p class="lead">Full‑stack engineer focused on realtime apps, performance, and developer experience.</p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn ghost" href="mailto:gopalkpandit07@gmail.com">Contact Me</a>
+          </div>
+
+          <ul class="stats">
+            <li><strong></strong><span>HTML</span></li>
+            <li><strong></strong><span>CSS</span></li>
+            <li><strong></strong><span>JS</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="card profile-card">
+            <img src="kali.jpg" alt="avatar">
+            <div class="profile-info">
+              <h3>Gopal Kr. Pandit</h3>
+              <p class="muted">Junior Software Devloper</p>
+              <div class="socials">
+                <a href="#">GitHub</a><br>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-cards">
+            <div class="mini-card">Websites:- <span>thestarboygp.ct.ws</span></div>
+            <div class="mini-card">Apps:- <span>Upcoming...</span></div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2>My Projects</h2>
+        <p class="muted">Production-ready systems with measurable impact.</p>
+
+        <div class="grid">
+          <article class="project">
+            <img src="gp.jpg" alt="project">
+            <h3>Gopal's Portfolio :- Website </h3>
+            <p> Click Here :-
+            <a href="https://thestarboygp.ct.ws" target="_blank">thestarboygp.ct.ws</a> </p>
+            <div class="tags"><span>Html</span><span>Css</span><span>JavaScript</span></div>
+          </article>
+
+          <article class="project">
+            <img src="https://via.placeholder.com/600x350.png?text=Project+2" alt="project">
+            <h3>Coming Soon...</h3>
+            <p>...</p>
+            <div class="tags"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="about-left">
+          <h2>About Me</h2>
+          <p>I'm A Junior Software devloper. My Name is Gopal Kumar Pandit. I Am From Dumka, Jharkhand. I Study In Btech CSE From Jharkhand University Of Technolgy.  </p>
+
+          <h4>What I bring</h4>
+          <ul>
+            <li>End-to-end product ownership</li>
+            <li>Clean, testable code</li>
+            <li>Practical infrastructure & cost-focused design</li>
+            <li>Mentoring and partnership experience</li>
+          </ul>
+        </div>
+
+        <aside class="about-right">
+          <h4>Skills</h4>
+          <div class="skill-group"><strong>Languages:- </strong><span>C, Java</span></div>
+          <div class="skill-group"><strong>Frontend:- </strong><span>HTML, CSS</span></div>
+          <div class="skill-group"><strong>Backend:- </strong><span>SQL</span></div>
+          <div class="skill-group"><strong>Cloud:- </strong><span>AWS, Docker</span></div>
+        </aside>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Enquiry</h2>
+        <p class="muted">Show Your Project And Any Doubt To Send Mesaage.</p>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form">
+            <label>Email <input type="email" name="email" required placeholder="name@dimain.com"></label>
+            <label>Message <textarea name="message" rows="6" columns="10" required placeholder="Tell me about your project..."></textarea></label>
+            <button type="submit" class="btn">Send message</button>
+          </form>
+
+          <div class="contact-card card">
+            <h3>Say hi</h3>
+            <p>Email: <a href="mailto:you@example.com">gopalkpandit07@gmail.com</a></p>
+            <p>Location: India</p>
+            <div class="socials"><a href="#">GitHub</a> · <a href="#">LinkedIn</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Gopal Kr. Pandit — Built with HTML, CSS & JS</p>
+    </footer>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
